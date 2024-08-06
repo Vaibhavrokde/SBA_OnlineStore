@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move source folder &apos;java&apos; to &apos;naming-server2&apos;&#x0D;&#x0A;- Original project: &apos;naming-server2&apos;&#x0D;&#x0A;- Destination element: &apos;naming-server2&apos;&#x0D;&#x0A;- Original element: &apos;naming-server2/src/main/java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move source folder" destination="=naming-server2" element1="/src\/main\/java" flags="6" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveRoots" roots="1" stamp="1710662034277" version="1.0"/>
+</session>

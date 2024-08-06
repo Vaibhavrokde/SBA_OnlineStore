@@ -1,0 +1,62 @@
+Product Sevice
+
+To add products : post : http://localhost:8080/api/product
+{
+"name":"Iphone13",
+"description":"Iphone 13",
+"price": 120000
+
+}
+
+to list all products: get : http://localhost:8080/api/product
+
+-------------
+
+Order Service
+
+to add order : post : http://localhost:8081/api/order
+{
+    "orderLineItemsDto":[
+        {
+        "skuCode":"iphone_13",
+        "price":1200,
+        "quentity":1
+        }
+    ]
+}
+
+---------
+
+Inventory serice
+
+to check whether the product is in inventory: get :http://inventory-service/api/inventory
+
+---------------------
+
+URLs after implementing API GateWay
+
+to get all product GET http://localhost:8765/api/product
+To add the product POST http://localhost:8765/api/order  with same payload as above
+
+Eureka server
+http://localhost:8761/eureka/web
+
+-----------------------------------
+
+Keyclock  run into cmd
+docker run -p 8181:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:24.0.1 start-dev
+
+http://localhost:8765/api/order
+first generate the token in the Autherization and use the same token for all of the request with body defined above.
+
+http://localhost:8765/api/product
+=------------------------------------------
+
+
+
+
+
+
+
+
+
